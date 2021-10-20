@@ -83,7 +83,7 @@ a {
 }
 
 .title {
-    margin: 10px;
+    margin:      10px;
     padding-top: 15px;
     font-size:   25px;
     font-weight: 650;
@@ -93,10 +93,10 @@ a {
 
 
 .first-title {
-    margin: 9px;
+    margin:         9px;
     padding-bottom: 5px;
-    font-size:   20px;
-    font-weight: 600;
+    font-size:      20px;
+    font-weight:    600;
 }
 
 
