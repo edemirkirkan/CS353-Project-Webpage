@@ -28,7 +28,7 @@ p {
 a {
     padding:     17px;
     font-size:   15px;
-    font-weight: 700;
+    font-weight: 500;
     align-self: center;
     text-decoration: none;
     color: #e2e2e2f6;
@@ -43,7 +43,7 @@ a {
     align-self: center;
     padding:     17px;
     font-size:   15px;
-    font-weight: 1000;
+    font-weight: 700;
     text-decoration: none;
     color: #e2e2e2f6;
 }
