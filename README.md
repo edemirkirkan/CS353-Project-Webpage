@@ -1,2 +1,2 @@
-# Car-Rental-System
-CS353 Database Systems Project
+# CS353 Database Systems Project
+https://edemirkirkan.github.io/Car-Rental-System/
