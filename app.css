@@ -34,15 +34,16 @@ a {
     color: #e2e2e2f6;
 }
 
-a:hover {
+.link-custom:hover {
     color: #007bff;
 }
+
 
 .custom-title-navbar {
     align-self: center;
     padding:     17px;
     font-size:   15px;
-    font-weight: 700;
+    font-weight: 1000;
     text-decoration: none;
     color: #e2e2e2f6;
 }
