@@ -34,20 +34,6 @@ a {
     color: #e2e2e2f6;
 }
 
-.link-custom:hover {
-    color: #007bff;
-}
-
-
-.custom-title-navbar {
-    align-self: center;
-    padding:     17px;
-    font-size:   15px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #e2e2e2f6;
-}
-
 .active-link {
     color: #007bff;
 }
