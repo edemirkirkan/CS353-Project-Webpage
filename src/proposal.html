@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/Car-Rental-System/styles/app.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/Car-Rental-System/src/logo.png"/>
+    <title>CS353 Database Systems Project</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="sticky-top navbar-custom">
+        <div class="nav-container-left">
+          <a style="pointer-events:none" class="link-custom">CS353 Database Systems Project</a>
+        </div>
+        <div class="nav-container-right">
+            <a class="link-custom active-link" href='/Car-Rental-System/src/proposal.html'>Proposal Report</a>
+            <a class="link-custom" href='/Car-Rental-System/src/design.html'>Design Report</a>
+            <a class="link-custom" href='/Car-Rental-System/src/final.html'>Final Report</a>
+            <a class="link-custom" href='/Car-Rental-System/src/model.html'>ER Model</a>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="title-container">
+            <h3 class="title">
+                 Project Proposal
+            </h3>
+            <a class="right-align" href="/Car-Rental-System/src/Proposal Report.pdf" download>
+                <img src="/Car-Rental-System/src/PDF.png" alt="PDF Download">
+            </a>
+        </div>
+        <hr>
+        <h4 class = "first-title">
+            Introduction
+        </h4>
+        <h4 class = "second-title">
+            Overview
+        </h4>
+        <p class = "first-text">
+            This proposal is for a database management system project which is about implementing a web-based Car Rental System. This proposal will contain a brief description of the application, establish functional and non-functional requirements, mention limitations, restrictions the technologies which we will be using while implementing the application. At the end of the proposal we will propose an E/R model for the database system. This system will be used by both the company’s employees and their customers.           </p>
+        <h4 class = "second-title">
+            Description
+        </h4>
+        <p class = "first-text">
+            This application will be a web-based system for customers to rent a car according to their driving experience. The system will be used by customers, employees, and managers. There will be a password for each user to log in to the system. For customers, we will require a driving license at the registration stage in order to control reservation requests suitable to customers' driving experience. After signing in or signing up, a customer can see the cars and can reserve the cars in the database with a smooth and easy-to-use UI. Moreover, a customer can make a request to have the car transferred to any city. After rental time ends the customer will be able to return the car to any branch. After the return, the customer will do a review about the rental experience and these reviews will be published to give an opinion to other users. Moreover, employees can also log in to the system to handle the transfer request and complete a reservation, employees will be able to see if there is a need for a penalty due to any damage to the car or if the deadline is passed.  Finally, managers will be able to use the system and they will be able to hire new employees and buy new cars and then add these employees or cars to the database.
+          </p>
+        <h4 class = "second-title">
+            Objective
+        </h4>
+        <p class = "first-text">
+            In the database system project, we are going to implement a web-based Car Rental System which will imitate a real life car rental system. While implementing the database and the application layer we intend to use the best practices followed by many other developers around the world. Implemented system will be used by both the company's employees and the customers. The main goals of this web-based system are as follows:
+          </p>
+        </p>
+        <ul>
+            <li class = "first-text">To offer customers an easy to use car rental service where they can choose from a wide range of options.</li>
+            <li class = "first-text">To offer customers different branches that they can rent cars suitable for their taste and driving experience.</li>
+            <li class = "first-text">To offer customers an easy renting experience with an easy to use UI, online payment with flexible return and pick-up locations.</li>
+            <li class = "first-text">To improve the system and customers experience,  a review system where each customer can give feedback about their rental experience. </li>
+            <li class = "first-text">To offer  employees an easy to use management platform where they can manage their daily tasks.</li>
+            <li class = "first-text">To offer an easy monitoring system for reservations such as monitoring ending and starting dates, and charge a penalty for excess time and for damage of cars if needed.</li>
+            <li class = "first-text">To help managers to hire new employees from the job offerings section, and buy new cars by adding them to the database.</li>
+            <li class = "first-text">To provide an admin panel where managers and employees can access the database.</li>
+        </ul>
+        <h4 class = "second-title">
+            Why & How
+        </h4>
+        <h4 class = "third-title">
+            Why a database system will be used?
+        </h4>
+        <p class = "second-text">
+            To keep the data of various elements of the car rental system such as cars, customers, reservations, employees and managers, we are in need of a database system. We are using a database system instead of a file system because with the usage of database systems it is much easier to keep data and access to the data later, and also it is faster. Moreover, by having a database we are able to have limitations on the data, and we can visualize the data organization by using relational model and entity-relationship model.          </p>
+        </p>
+        <h4 class = "third-title">
+            How a database system will be used?
+        </h4>
+        <p class = "second-text">
+            Relational schema will be used  to keep track of main tables, and to determine relation between tables, foreign keys, the Entity-Relationship model diagram will be used that can be found in section five of this paper. Using this relational schema and structured query language, PostgreSQL database will be created. Finally, we will manage, modify, and keep track of the application's data using the car rental system database.        </p>
+        <hr>
+
+        <h4 class = "first-title">
+            Requirements
+        </h4>
+        <h4 class = "second-title">
+            Functional Requirements
+        </h4>
+        <h4 class = "third-title">
+            For Customers
+        </h4>
+        <ul>
+            <li class = "second-text">Customers will be able to reserve cars.</li>
+            <li class = "second-text">Customers will need to upload their driving license.</li>
+            <li class = "second-text">Customers will need to have a certain level of experience to reserve a car which will change according to their driving license.</li>
+            <li class = "second-text">Customers will be able to make requests for the transportation of the car between branches.</li>
+            <li class = "second-text">Customers will be able to drop off the car at any branch they want.</li>
+            <li class = "second-text">Customers will be able to make payments at any branch they want.</li>
+            <li class = "second-text">Customers will be penalized if the deadline for the drop off is passed.</li>
+            <li class = "second-text">Customers will be able to give reviews about their renting experience after they dropped off the car.</li>
+            <li class = "second-text">Customers will have access to the admin panel.</li>
+            <li class = "second-text">Customers will need to sign a contract while renting a car.</li>
+            <li class = "second-text">Customers will have an extra option for insurance.</li>
+        </ul>
+        <h4 class = "third-title">
+            For Managers
+        </h4>
+        <ul>
+            <li class = "second-text">Managers will be able to hire new employees to the branches they work in.</li>
+            <li class = "second-text">Managers will be able to buy new cars to the branches they work in.</li>
+            <li class = "second-text">Managers will have access to the admin panel.</li>
+            <li class = "second-text">Managers will be able to do every task that an employee can do.</li>
+        </ul>
+        <h4 class = "third-title">
+            For Employeees
+        </h4>
+        <ul>
+            <li class = "second-text">Employees will be able to approve or decline the customer's reservation.</li>
+            <li class = "second-text">Employees will be able to handle customer's request for a car in another city. </li>
+            <li class = "second-text">Employees will be able to take payments from the customer.</li>
+            <li class = "second-text">Employees will be able to check the car for damages when it is returned and penalize the customer accordingly.</li>
+            <li class = "second-text">Employees will be able to sign contracts with the customers./li>
+            <li class = "second-text">Employees will be able to get a variety of reports about past data to examine them just giving parameters to the system like start date and end date. </li>
+        </ul>
+        <h4 class = "second-title">
+            Non-Functional Requirements
+        </h4>
+        <h4 class = "third-title">
+            Reliability
+        </h4>
+        <ul>
+            <li class = "second-text">The database system will be designed in a way that it ensures coherence during data modifications.</li>
+            <li class = "second-text">The database system will also ensure that there will be no data lost during any kind of system failure or malfunctions.</li>
+        </ul>
+        <h4 class = "third-title">
+            Maintainability
+        </h4>
+        <ul>
+            <li class = "second-text">Creational, structural or behavioral objects oriented programming patterns will be used to improve the application’s modularity.</li>
+            <li class = "second-text">‘SOLID’ software practices will be used for SQL databases to make the system extensible, but not modifiable.</li>
+            <li class = "second-text">SQL queries will be encapsulated and modularized to improve scalability of the system.</li>
+        </ul>
+        <h4 class = "third-title">
+            Performance
+        </h4>
+        <ul>
+            <li class = "second-text">Application layer will use caching for faster response times.  </li>
+            <li class = "second-text">For better performance, SQL queries will be optimized.</li>
+            <li class = "second-text">The spring entities will be used for entity lifecycle management to improve the performance of the system.</li>
+        </ul>
+        <h4 class = "third-title">
+            Authentication
+        </h4>
+        <ul>
+            <li class = "second-text">PostgreSQL users with different access levels will be used to give access to the admin panel.</li>
+            <li class = "second-text">Role based authentication will be used for different endpoints.</li>
+        </ul>
+        
+        <hr>
+        <h4 class = "first-title">
+            Limitations
+        </h4>
+            <ul>
+                <li class = "first-text">There cannot be more than one user with the same email address.</li>
+                <li class = "first-text">Passwords must be longer than six characters, it must contain at least one number and it can’t contain a sequence of numbers longer than three.</li>
+                <li class = "first-text">Customer reviews cannot exceed 250 characters.</li>
+                <li class = "first-text">A customer can request his/her desired cars to be transferred to the branches in his/her city and can rent the car from there, but there is no delivery to home option.</li>
+                <li class = "first-text">A customer will have  a cost penalty if he/she hands over the car after the reservation deadline, damages the car in the reservation period, or abandons the approved transfer request.</li>
+                <li class = "first-text">A customer cannot reserve a car, if he/she does not have a compatible driver license.</li>
+                <li class = "first-text">Each reservation is associated with only one customer, but can be checked by more than one employee.</li>
+                <li class = "first-text">Each transfer request is associated with only one customer, but can be handled by more than one employee.</li>
+                <li class = "first-text">A customer will receive a penalty, if the reservation deadline passes.</li>
+                <li class = "first-text">Each branch must have at least one manager.</li>
+                <li class = "first-text">A manager can be associated with only one branch.</li>
+                <li class = "first-text">A manager can hire employees and purchase new cars for only his/her own branch.</li>
+                <li class = "first-text">A customer cannot cancel his/her reservation if there is less than one hour to the reservation starting time.</li>
+                <li class = "first-text">Customers cannot give a reservation review before the reservation deadline.</li>
+                <li class = "first-text">Managers/employees cannot modify customer reviews.</li>
+              </ul>
+              
+
+        <hr>
+        <h4 class = "first-title">
+            Constraints
+        </h4>
+        <h4 class = "second-title">
+            Backend
+        </h4>
+        <h4 class = "third-title">
+            Java
+        </h4>
+        <p class = "second-text">Java will be used as a main language while implementing a web server that will be responsible for querying the required data and serving static HTML pages to the user. To achieve this goal in addition to other libraries we will mainly be using the following packets from the spring framework.</p>
+        <ul>
+            <li class = "second-text">Spring Web for creating a web server</li>
+            <li class = "second-text">Spring Security for setting up authentication of certain URL endpoints</li>
+            <li class = "second-text">Spring Data JDBC for executing SQL queries</li>
+            <li class = "second-text">PostgreSQL driver for connecting web server to database</li>
+            <li class = "second-text">Thymeleaf as Java templating engine</li>
+          </ul>
+        <h4 class = "third-title">
+            PostgreSQL
+        </h4>
+        <p class = "second-text">PostgreSQL will be used as the structured query language for the creation and management of the car rental database system.</p>   
+        <h4 class = "second-title">
+            Frontend
+        </h4>
+        <p class = "first-text">Javascript, HTML, CSS, and their related libraries will be used for building frontend of the project.</p>
+        <h4 class = "second-title">
+            Project Information
+        </h4>
+        <p class = "first-text">Information about the project implementation and reports can be reached via following repository:</p>
+        <p class = "first-text"><a style="color:#0D0DC8"href="https://github.com/edemirkirkan/Car-Rental-System">Project's Github Repository</a></p>
+        <hr>
+      </section>    
+</body>
+<footer id="dk-footer" class="dk-footer">
+    <div class="foot"> </div> 
+</footer>
+</html>
